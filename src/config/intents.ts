@@ -20,6 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
+import { IconClipboardList, IconListCheck } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -35,6 +36,8 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
+  { path: '/intents/bewerbung-erfassen', label: 'Bewerbung erfassen', icon: IconClipboardList, description: 'Bewerber anlegen und Bewerbung für eine Stelle einreichen' },
+  { path: '/intents/bewerbungsprozess', label: 'Bewerbungsprozess', icon: IconListCheck, description: 'Bewerbungen einer Stelle verwalten und Status steuern' },
   // </custom:intents>
 ];
 
@@ -45,4 +48,4 @@ export const INTENTS: IntentLink[] = [
  * purpose — a scaffold update resets it to false (self-healing if Phase 2
  * never ran).
  */
-export const INTENTS_PENDING = true;
+export const INTENTS_PENDING = false;

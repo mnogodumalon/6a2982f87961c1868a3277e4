@@ -19,6 +19,8 @@ import PublicFormBewerber from '@/pages/public/PublicForm_Bewerber';
 // <public:imports>
 // </public:imports>
 // <custom:imports>
+const BewerbungErfassenPage = lazy(() => import('@/pages/intents/BewerbungErfassenPage'));
+const BewerbungsprozessPage = lazy(() => import('@/pages/intents/BewerbungsprozessPage'));
 // </custom:imports>
 
 export default function App() {
@@ -43,6 +45,8 @@ export default function App() {
                 <Route path="bewerber/:id" element={<BewerberDetailPage />} />
                 <Route path="admin" element={<AdminPage />} />
                 {/* <custom:routes> */}
+                <Route path="intents/bewerbung-erfassen" element={<Suspense fallback={null}><BewerbungErfassenPage /></Suspense>} />
+                <Route path="intents/bewerbungsprozess" element={<Suspense fallback={null}><BewerbungsprozessPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>
