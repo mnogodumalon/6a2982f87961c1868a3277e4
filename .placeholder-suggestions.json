@@ -1,0 +1,29 @@
+{
+  "StellenDialog.tsx": {
+    "bezeichnung": "z. B. Softwareentwickler/in",
+    "abteilung": "z. B. IT, Entwicklung",
+    "standort": "z. B. Berlin, Remote",
+    "beschaeftigungsart": "Wähle eine Beschäftigungsart",
+    "eintrittsdatum": "Wann soll die Person starten?",
+    "beschreibung": "Aufgaben, Anforderungen, Benefits..."
+  },
+  "BewerbungenDialog.tsx": {
+    "bewerber": "Welcher Bewerber?",
+    "stelle": "Für welche Stelle?",
+    "eingangsdatum": "Wann kam die Bewerbung an?",
+    "status_bewerbung": "Aktueller Status im Prozess",
+    "prioritaet": "Wie dringend ist dieser Kandidat?",
+    "naechster_schritt": "z. B. E-Mail versenden, Anruf",
+    "datum_naechster_schritt": "Bis wann muss das erfolgt sein?",
+    "notizen_prozess": "Gesprächsergebnisse, Besonderheiten..."
+  },
+  "BewerberDialog.tsx": {
+    "vorname": "z. B. Maria",
+    "nachname": "z. B. Mustermann",
+    "email": "z. B. maria@example.de",
+    "telefon": "z. B. +49 123 456789",
+    "wohnort": "z. B. Berlin",
+    "bewerbungskanal": "Woher kam die Bewerbung?",
+    "notizen_bewerber": "Qualifikationen, Besonderheiten, Notizen..."
+  }
+}

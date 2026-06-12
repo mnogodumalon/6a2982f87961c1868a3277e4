@@ -1,0 +1,5 @@
+- Stellen (stellen): bezeichnung[string/text], abteilung[string/text], standort[string/text], beschaeftigungsart[lookup/select], eintrittsdatum[date/date], beschreibung[string/textarea], status_stelle[lookup/select]
+- Bewerbungen (bewerbungen): bewerber[applookup/select], stelle[applookup/select], eingangsdatum[date/date], status_bewerbung[lookup/select], prioritaet[lookup/radio], naechster_schritt[string/text], datum_naechster_schritt[date/date], notizen_prozess[string/textarea]
+  → bewerber links to app_id 6a2982e55e971adb7e10b746
+  → stelle links to app_id 6a2982e111372d67f5b18879
+- Bewerber (bewerber): vorname[string/text], nachname[string/text], email[string/email], telefon[string/tel], wohnort[string/text], bewerbungskanal[lookup/select], lebenslauf[file], anschreiben[file], weitere_dokumente[file], notizen_bewerber[string/textarea]

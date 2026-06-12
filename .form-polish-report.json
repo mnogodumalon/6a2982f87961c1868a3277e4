@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "Stellen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["eintrittsdatum", "status_stelle"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten einer Stellenausschreibung — Bezeichnung, Abteilung, Standort, Beschäftigungsart, Eintrittsdatum, Status, Beschreibung. Keine numerischen Felder, keine Lookups mit Preis-Targets, keine Datums-Paare für Dauer-Berechnungen. Nichts berechenbar."
+    },
+    "Bewerbungen": {
+      "placeholders_set": 8,
+      "defaults_keys": ["eingangsdatum", "status_bewerbung", "prioritaet"],
+      "computed_keys": [],
+      "reason": "Bewerbungsprozess-Entity — Bewerber + Stelle (applookups ohne Preis-Target), Eingangsdatum, Status/Priorität (Lookups), nächster Schritt + Datum, Notizen. Zwei Daten-Felder (Eingang, Follow-up), aber NICHT als Paar mit Dauer-Semantik — keine Aggregation oder Multiplikation möglich. Reine Prozess-Verwaltung."
+    },
+    "Bewerber": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Kandidaten-Stammdaten — Vorname, Nachname, E-Mail, Telefon, Wohnort, Bewerbungskanal, Notizen. Keine numerischen Felder, keine applookups, keine Berechnungen. Reine Kontaktdaten, User-getrieben."
+    }
+  }
+}
